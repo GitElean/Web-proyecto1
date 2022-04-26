@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.header-wrapper{
+    @apply fixed top-0 flex justify-center w-full max-w-full bg-black z-50 h-16   
+    opacity-75 backdrop-blur-sm
+}
+
+.header-component{
+    @apply z-[51]
+}
+
+.list-part{
+    @apply text-slate-300 hover:text-white transition-all duration-200 text-xl
+}
+
+.footer-container{
+    @apply p-6
+}
+
+.footer-title{
+    @apply text-slate-50 hover:text-white transition-all duration-200 text-xl
+}

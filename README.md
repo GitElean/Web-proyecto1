@@ -21,9 +21,10 @@ Este proyecto esta llevado a cabo únicamente por el usuario GitElean de github.
 --Tecnologías en las que esta montado este proyecto.
 Es un sitio principalmente construído con JavaScript y CSS.
 Las tecnologías usadas son:
-Node.js v 16.14.0
-React.js 17.0.2
-Babel v 7.15.8
-Webpack v 5.58.2
-Eslint 8.12.0   Configuración usada: "Standar"
-Tailwindcss v 3.0.23
+Node.js v 16.14.0 : https://nodejs.org/en/
+React.js 17.0.2 : https://reactjs.org/
+Babel v 7.15.8 : https://babeljs.io/
+Webpack v 5.58.2 : https://webpack.js.org/
+Eslint 8.12.0   Configuración usada: "Standar" : https://eslint.org/
+Tailwindcss v 3.0.23 : https://tailwindcss.com/
+Geist v 2.3.8 : https://geist-ui.dev/en-us
