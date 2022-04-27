@@ -5,7 +5,7 @@ import Logo from './vercelLogo'
 const Footer = () => {
   return (
     <div>
-      <footer className="text-xs bg-slate-700 border-y border-slate-400 py-4 px-2 flex bottom-0">
+      <footer className=" bg-slate-700 border-y border-slate-400 py-4 px-2 flex bottom-0">
         <nav className="flex">
           <div className="footer-container">
             <label>
@@ -25,7 +25,7 @@ const Footer = () => {
           <div className="footer-container">
             <label>
               <h3 className="footer-title">Resources</h3>
-              <ul className="style=list-style-type:none;">
+              <ul className="list-disc">
                 <li className="list-part">Documentation</li>
                 <li className="list-part">Experts</li>
                 <li className="list-part">Customers</li>
@@ -41,7 +41,7 @@ const Footer = () => {
           <div className="footer-container">
             <label>
               <h3 className="footer-title">Company</h3>
-              <ul className="style=list-style-type:none;">
+              <ul className="list-disc">
                 <li className="list-part">Home</li>
                 <li className="list-part">Blog</li>
                 <li className="list-part">Changelog</li>
@@ -71,7 +71,9 @@ const Footer = () => {
             </label>
           </div>
         </nav>
-        <div className="w-8 h-8 fill-white flex"><Logo /></div>
+        <div className="w-8 h-8 fill-white">
+          <Logo />
+        </div>
       </footer>
     </div>
   )

@@ -1,14 +1,11 @@
-import * as React from 'react'
+const Logo = () => {
+  return (
+      <svg viewBox="0 -17 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
+        <g>
+          <polygon points="128 0 256 221.705007 0 221.705007"></polygon>
+        </g>
+      </svg>
+  )
+}
 
-const SVGComponent = (props) => (
-  <svg
-    viewBox="0 -17 256 256"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlnsXlink="http://www.w3.org/1999/xlink"
-    preserveAspectRatio="xMidYMid"
-    {...props}
-  >
-  </svg>
-)
-
-export default SVGComponent
+export default Logo
