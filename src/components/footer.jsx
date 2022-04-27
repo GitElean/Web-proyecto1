@@ -1,6 +1,5 @@
 import '../styles/index.css'
 import React from 'react'
-import Logo from './vercelLogo'
 
 const Footer = () => {
   return (
@@ -71,9 +70,17 @@ const Footer = () => {
             </label>
           </div>
         </nav>
+        <div className="inline-flex bottom-1">
         <div className="w-8 h-8 fill-white">
-          <Logo />
+          <svg viewBox="0 -17 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
+            <g>
+              <polygon points="128 0 256 221.705007 0 221.705007"></polygon>
+            </g>
+          </svg>
         </div>
+        <h3 className="text-white">Vercel</h3>
+        </div>
+        <p className="text-slate-600">Copyright © 2022 Vercel Inc. All rights reserved.</p>
       </footer>
     </div>
   )
