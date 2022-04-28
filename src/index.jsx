@@ -1,11 +1,10 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 import App from './components/app'
-import Animation from './components/animation'
 import './styles/index.css'
 import { GeistProvider, CssBaseline } from '@geist-ui/core'
 
-ReactDom.render(<GeistProvider>
+ReactDom.render(<GeistProvider themeType='dark'>
     <CssBaseline />
-    <Animation />
+    <App />
   </GeistProvider>, document.getElementById('app'))

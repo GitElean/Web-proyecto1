@@ -1,7 +1,7 @@
-import React from 'react'
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Button, Page, Text } from '@geist-ui/core'
 import Titulo from './animation'
+import regeneratorRuntime from 'regenerator-runtime'
 
 const Startcontainer = () => {
   const textAnimation = {
@@ -16,6 +16,10 @@ const Startcontainer = () => {
   const [colorDevelop, setColorDevelop] = useState('white')
   const [colorPreview, setColorPreview] = useState('white')
   const [colorShip, setColorShip] = useState('white')
+
+  useEffect(() => {
+    initColors()
+  }, [])
 
   const initColors = async () => {
     while (true) {
@@ -32,12 +36,12 @@ const Startcontainer = () => {
     }
   }
 
-  function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+  function sleep (ms) {
+    return new Promise(resolve => setTimeout(resolve, ms))
   }
 
   return (
-        <div className="p-20">
+        <div className="p-20 text-center">
             <div className={textAnimation[colorDevelop].develop + ' text-[10rem] font-bold -mb-8 transition-all duration-1000 bg-clip-text bg-gradient-to-r from-[#007CF0] to-[#00DFD8]'}>
                 Develop.
             </div>
@@ -47,13 +51,14 @@ const Startcontainer = () => {
             <div className={textAnimation[colorShip].develop + ' text-[10rem] font-bold -mb-8 transition-all duration-1000 bg-clip-text bg-gradient-to-r from-[#FF4D4D] to-[#F9CB28]'}>
                 Ship.
             </div>
-            <div className="text-center">
-            <Button onClick={()=> initColors () } type="secondary" ghost auto scale={0.8} className="p-4">Start Deploying</Button>
-            <button type="button" class="text-slate-300 p-4 border border-slate-300 focus:outline-none  focus:ring-4 focus:ring-gray-200 font-medium rounded-lg hover:text-white hover:border-white text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Get a Demo</button>
+            <div className="text-center p-6 flex justify-center">
+            <Button onClick={() => initColors() } type="secondary" auto scale={1.8} className="p-4">Start Deploying</Button>
+            <div className="w-[2%]"></div>
+            <button type="button" class="text-slate-300 text-xl p-4 border border-slate-300 focus:outline-none  focus:ring-4 focus:ring-gray-200 font-medium rounded-lg hover:text-white hover:border-white px-[44px] py-[14px] mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Get a Demo</button>
             </div>
-            <div className="text-slate-400 text-2xl text-center">Vercel combines the best developer experience with an obsessive focus on end-user<br></br> performance.<br></br>
+            <div className="text-slate-400 text-2xl text-center p-12">Vercel combines the best developer experience with an obsessive focus on end-user<br></br> performance.<br></br>
             Our platform enables frontend teams to do their best work.</div>
-            <div className="text-xl text-white text-center">EXPLORE THE VERCEL WAY</div>
+            <div className="text-xl text-white text-center p-10">EXPLORE THE VERCEL WAY</div>
         </div>
   )
 }

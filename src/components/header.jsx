@@ -13,23 +13,19 @@ const Header = () => {
             </g>
           </svg>
         </div>
-        <h3 className="text-white ml-3-">Vercel</h3>
-        <div className="text-2xl text-gray-400 hover:text-white transition-all duration-200">
-          <ul className="inline-flex space-x-4">
-            <li className="list-part2">Features</li>
-            <li className="list-part2">Templates</li>
-            <li className="list-part2">Integrations</li>
-            <li className="list-part2">Customers</li>
-            <li className="list-part2">Pricing</li>
-          </ul>
+        <h3 className="text-white ml-3- ">Vercel</h3>
+        <div className="text-2xl text-gray-400 hover:text-white transition-all inline-flex duration-200">
+            <div className="list-part2">Features</div>
+            <div className="list-part2">Templates</div>
+            <div className="list-part2">Integrations</div>
+            <div className="list-part2">Customers</div>
+            <div className="list-part2">Pricing</div>
         </div>
-        <div>
-          <ul className="inline-flex p-1">
-            <li className="list-part2 text-sm">Login</li>
-            <li className="list-part2 text-sm">Contact</li>
-          </ul>
+        <div className="inline-flex align-top pt-[-5px]">
+            <div className="list-part2 text-sm">Login</div>
+            <div className="list-part2 text-sm">Contact</div>
         </div>
-        <Button type="secondary" ghost auto scale={0.7}>Sign Up</Button>
+        <Button type="secondary" auto scale={0.7}>Sign Up</Button>
       </div>
     </>
   )
