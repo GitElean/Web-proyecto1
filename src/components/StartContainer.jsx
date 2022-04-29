@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { Button, Page, Text } from '@geist-ui/core'
-import Titulo from './animation'
 import regeneratorRuntime from 'regenerator-runtime'
 
 const Startcontainer = () => {
@@ -42,13 +41,13 @@ const Startcontainer = () => {
 
   return (
         <div className="p-20 text-center">
-            <div className={textAnimation[colorDevelop].develop + ' text-[10rem] font-bold -mb-8 transition-all duration-1000 bg-clip-text bg-gradient-to-r from-[#007CF0] to-[#00DFD8]'}>
+            <div className={textAnimation[colorDevelop].develop + ' text-[12rem] font-bold -mb-8 transition-all duration-1000 bg-clip-text bg-gradient-to-r from-[#007CF0] to-[#00DFD8]'}>
                 Develop.
             </div>
-            <div className={textAnimation[colorPreview].develop + ' text-[10rem] font-bold -mb-8 transition-all duration-1000 bg-clip-text bg-gradient-to-r from-[#7928CA] to-[#FF0080]'}>
+            <div className={textAnimation[colorPreview].develop + ' text-[12rem] font-bold -mb-8 transition-all duration-1000 bg-clip-text bg-gradient-to-r from-[#7928CA] to-[#FF0080]'}>
                 Preview.
             </div>
-            <div className={textAnimation[colorShip].develop + ' text-[10rem] font-bold -mb-8 transition-all duration-1000 bg-clip-text bg-gradient-to-r from-[#FF4D4D] to-[#F9CB28]'}>
+            <div className={textAnimation[colorShip].develop + ' text-[12rem] font-bold -mb-8 transition-all duration-1000 bg-clip-text bg-gradient-to-r from-[#FF4D4D] to-[#F9CB28]'}>
                 Ship.
             </div>
             <div className="text-center p-6 flex justify-center">

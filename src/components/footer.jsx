@@ -5,8 +5,8 @@ import { Github, Twitter } from '@geist-ui/icons'
 
 const Footer = () => {
   return (
-    <><div>
-      <footer className=" bg-slate-700 border-y border-slate-400 py-4 px-2 flex ">
+    <><div className="bg-slate-700 border-slate-40">
+      <footer className=" bg-slate-700 border-y 0 py-4 px-2 flex-col w-70% mx-auto">
         <nav className="flex">
           <div className="footer-container">
             <label>
