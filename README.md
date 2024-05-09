@@ -29,13 +29,13 @@ This project is solely carried out by the GitHub user GitElean. The original des
 It is a site mainly built with JavaScript and CSS.
 The technologies used are:
 
-Node.js v 16.14.0: https://nodejs.org/en/
-React.js 17.0.2: https://reactjs.org/
-Babel v 7.15.8: https://babeljs.io/
-Webpack v 5.58.2: https://webpack.js.org/
-Eslint 8.12.0 Configuration used: "Standard": https://eslint.org/
-Tailwindcss v 3.0.23: https://tailwindcss.com/
-Geist v 2.3.8: https://geist-ui.dev/en-us
+- Node.js v 16.14.0: https://nodejs.org/en/
+- React.js 17.0.2: https://reactjs.org/
+- Babel v 7.15.8: https://babeljs.io/
+- Webpack v 5.58.2: https://webpack.js.org/
+- Eslint 8.12.0 Configuration used: "Standard": https://eslint.org/
+- Tailwindcss v 3.0.23: https://tailwindcss.com/
+- Geist v 2.3.8: https://geist-ui.dev/en-us
 
 ## Español
 ### Qué hace el proyecto
